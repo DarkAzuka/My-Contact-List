@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalles Personas</title>
+</head>
+<body style="background-color:rgb(255, 165, 165); font-family: courier">
+<img src="https://image.freepik.com/vector-gratis/vector-unicornio-kawaii-pastel_70350-218.jpg"
+     align="right"
+     alt='poposita' width="150" height="180"/>
+<h1 style="color:rgb(223, 99, 99); text-align: center"> Detalles: (\(~v~))</h1>
+<div>Numero de Registro: {{persona_detalle.dni}}</div>
+<div align="left">Nombre(s): {{persona_detalle.nombres}}</div>
+<div>Apellidos: {{persona_detalle.apellido_paterno}} {{persona_detalle.apellido_paterno}}</div>
+<div>Es de Genero: {{persona_detalle.sexo}}</div>
+<div>Cumpleaños: {{persona_detalle.fecha_nacimiento}}</div>
+<ul>Direccion: {{persona_detalle.domicilio}}</ul>
+<a href="{% url 'index' %}">Regresar a Inicio</a>
+</body>
+</html>

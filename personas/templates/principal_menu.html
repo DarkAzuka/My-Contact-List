@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> My Contact List </title>
+</head>
+<body style="background-color:rgb(255, 165, 165); font-family: courier">
+<img src="https://images-na.ssl-images-amazon.com/images/I/410D6sYBFTL.jpg"
+     align="right"
+     alt='poposita' width="150" height="180"/>
+<h1 style="color:rgb(223, 99, 99); text-align: center"> My Contact List (\(^v^)/)</h1>
+<div style="color:rgb(177, 58, 37); text-align: left">Personas Agregadas: {{no_personas}}</div>
+<div>
+    <ul>
+        {% for persona in info_persona %}
+            <li>Num de registro: {{persona.dni}}:
+                Nombre(s): {{persona.nombres}} {{persona.apellido_paterno}}
+                <a href="detalles_persona/{{persona.dni}}">Detalles</a>
+                <a href="editar_persona/{{persona.dni}}">Editar</a>
+                <a href="eliminar_persona/{{persona.dni}}">Eliminar</a>
+            </li>
+        {% endfor %}
+       <div align="right">
+           <font size=5 face="Comic Sans MS,arial"><a href="nueva_persona">Agregar Nueva Persona!</a></font>
+       </div>
+    </ul>
+</div>
+</body>
+</html>

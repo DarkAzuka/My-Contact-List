@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title> <3 Enviar Mensaje: <3 </title>
+</head>
+<body style="background-color:rgb(255, 165, 165); font-style: courier">
+<h1>Contactenos!</h1>
+    <form action="Enviar Mensaje" METHOD="post">{% csrf_token %}
+        <p>Asunto: <input type="text" name="txtAsunto"/></p>
+        <p>Asunto: <input type="text" name="txtEmail"/></p>
+        <p>
+            Mensaje:
+            <textarea name="textMensaje" rows="5" cols="30" style="resize: none;"></textarea>
+        </p>
+        <input type="submit" value="Enviar"/>
+    </form>
+</body>
+</html>
