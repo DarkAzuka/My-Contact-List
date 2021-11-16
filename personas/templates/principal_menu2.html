@@ -12,8 +12,8 @@
         <header>
             <h1 id="headline">My Contact List</h1>
             <div class="group">
-                <div class="added">Personas Agregadas: <label class="vacia">{{no_personas}}</label></div>
-            </div>
+                <div class="added">Personas Agregadas: <span class="vacia">{{no_personas}}</span></div>
+            </div>            
         </header>
 
         <button class="btn-toggle">Ocultar Lista</button>
@@ -23,9 +23,11 @@
             <ul>
                 <li>Num de registro: {{persona.dni}}:
                     Nombre(s): {{persona.nombres}} {{persona.apellido_paterno}}
+                    <span class="a-span">
                     <a href="detalles_persona/{{persona.dni}}">Detalles</a>
                     <a href="editar_persona/{{persona.dni}}">Editar</a>
                     <a href="eliminar_persona/{{persona.dni}}">Eliminar</a>
+                    </span>
                 </li>
             {% endfor %}
             <div class="agregar">
