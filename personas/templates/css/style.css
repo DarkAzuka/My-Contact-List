@@ -1,0 +1,154 @@
+@import 'https://fonts.googleapis.com/css?family=Lato:400,700';
+
+:root {
+  --color-main: #ffa5a5;
+  --color-hide: #ffd7ba;
+  --color-hide-dark: #fec89a;
+  --color-add: #34baec;
+  --color-add-dark: #2ca6d2;
+  --color-remove: #b8555e;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Lato', sans-serif;
+    color: #222;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background: #F4C2C2;
+  }
+
+  .wrapper {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 0 auto;
+    box-shadow: 0 10px 22px -15px #cb997e;
+  }
+
+  header {
+    text-align: center;
+    padding: 2.5em 1em;
+    background-color: var(--color-main);
+  }
+
+  header h1 {
+    font-size: 2.5em;
+    line-height: 1;
+    color: #fff;
+    margin: 0 0 0.65em;
+  }
+
+  .group {
+    display: flex;
+    justify-content: center;
+  }
+
+  .list-container {
+  padding: 0.65em 2em 2em;
+  background: #f8edeb;
+}
+
+ul {
+  font-size: 1.15em;
+  padding: 0;
+  margin: 0 0 1.15em;
+  list-style: none;
+}
+
+li {
+  padding: 1.15em 0.5em;
+  display: flex;
+  align-items: center;
+  border-bottom: solid 1px #dedede;
+  color: black;
+}
+
+li:last-child {
+  border: none;
+}
+
+.list-container ul li {
+  color: #cb997e;
+  font-size: 1em;
+  padding: 1em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.list-container ul li:hover {
+  background-color: rgba(255, 165, 165,0.1);
+}
+
+.list-container ul li a {
+  display: inline-block;
+  position: relative;
+  font-size: 1.2rem;
+  color: var(--color-add);
+  text-decoration: none;
+  font-weight: 300;
+  padding: 5px;
+  text-align: right;
+  margin-right: 0;
+}
+
+.list-container ul li a:hover {
+  color: var(--color-main);
+}
+
+button {
+  color: white;
+  font-size: 1em;
+  padding: 1em;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+button:hover {
+  background-color: var(--color-add-dark);
+}
+button:focus {
+  outline: solid 3px #d8e2dc;
+  outline-offset: -3px;
+}
+.btn-toggle {
+  background-color: var(--color-hide);
+}
+.btn-toggle:hover {
+  background-color: var(--color-hide-dark);
+}
+
+.added {
+  font-family: 'Lato', sans-serif;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.agregar {
+  color: white;
+  font-size: 1em;
+  padding: 0;
+  background-color: #8ecae6;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  align-items: center;
+}
+
+.agregar a {
+  cursor: pointer;
+  display: inline-block;
+  background:var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 30px;
+  margin: 20px 0;
+  border: 0;
+  align-items: right;
+}
