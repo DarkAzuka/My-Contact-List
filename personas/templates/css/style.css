@@ -94,8 +94,14 @@ li:last-child {
   text-decoration: none;
   font-weight: 300;
   padding: 5px;
-  text-align: right;
-  margin-right: 0;
+  border: 2px solid #d8e2dc;
+  border-radius: 10px;
+  background-color: #d8e2dc;
+
+}
+
+.a-span {
+  margin-left: auto;
 }
 
 .list-container ul li a:hover {
@@ -131,24 +137,29 @@ button:focus {
 }
 
 .agregar {
+  display: flex;
+  justify-content: center;
   color: white;
   font-size: 1em;
   padding: 0;
-  background-color: #8ecae6;
   border: none;
-  cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   align-items: center;
 }
 
+
 .agregar a {
   cursor: pointer;
   display: inline-block;
-  background:var(--primary-color);
+  background-color: #90e0ef;
   color: #fff;
   text-decoration: none;
   padding: 10px 30px;
   margin: 20px 0;
   border: 0;
   align-items: right;
+}
+
+.agregar a:hover {
+  transform: scale(1.05);
 }
